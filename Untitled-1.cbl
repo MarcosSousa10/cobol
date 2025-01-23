@@ -8,9 +8,7 @@
        working-storage section.
        
        procedure division.
-         DISPLAY "hello word".
-       STOP RUN.
-       goback.
-        goback.
-       
+           DISPLAY "hello word".
+           STOP RUN.
+           goback.       
        end program programIDName.
