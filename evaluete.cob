@@ -40,9 +40,9 @@
                move WRK-FRETE to WRK-FRETE-ED.
            
        0200-MOSTRA SECTION.
-           display WRK-VALOR .
+           display WRK-VALOR-ED .
            if WRK-FRETE GREATER 0
-               display WRK-FRETE 
+           display WRK-FRETE-ED 
            END-IF.
        0300-final section.
            STOP RUN.
