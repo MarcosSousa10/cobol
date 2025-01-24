@@ -3,6 +3,7 @@
       *********************************
       * OBJETIVO:  SISTEMA DE GESTAO DE CLIENTES
       * AUTHOR  :  MARCOS SOUSA
+      *obc -x -o programa1.exe Clientes1.cob
       ********************************* 
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
