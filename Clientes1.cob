@@ -241,7 +241,7 @@
                            CLIENTES-EMAIL DELIMITED BY SIZE
                            INTO RELATO-DADOS1
                    END-STRING
-                   MOVE SPACES TO RELATO-DADOS1(51:) 
+                   MOVE SPACES TO RELATO-DADOS1(100:) 
                    
                    WRITE RELATO-REG1
                    
