@@ -1,0 +1,33 @@
+<definitions name="HelloWorldService"
+             targetNamespace="http://example.com/HelloWorld"
+             xmlns:tns="http://example.com/HelloWorld"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
+    <message name="HelloWorldRequest"/>
+    <message name="HelloWorldResponse">
+        <part name="response" type="xsd:string"/>
+    </message>
+    <portType name="HelloWorldPortType">
+        <operation name="sayHello">
+            <input message="tns:HelloWorldRequest"/>
+            <output message="tns:HelloWorldResponse"/>
+        </operation>
+    </portType>
+    <binding name="HelloWorldBinding" type="tns:HelloWorldPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="sayHello">
+            <soap:operation soapAction="sayHello"/>
+            <input>
+                <soap:body use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="HelloWorldService">
+        <port name="HelloWorldPort" binding="tns:HelloWorldBinding">
+            <soap:address location="http://localhost:8080/helloworld"/>
+        </port>
+    </service>
+</definitions>

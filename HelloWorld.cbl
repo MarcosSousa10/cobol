@@ -1,0 +1,17 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. API.
+       
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+           DECIMAL-POINT IS COMMA.
+       
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 MSG-RETORNO PIC X(100) VALUE "Mensagem da API COBOL!".
+       
+       PROCEDURE DIVISION.
+       EXIBIR-MENSAGEM.
+           DISPLAY MSG-RETORNO.
+           STOP RUN.
+       

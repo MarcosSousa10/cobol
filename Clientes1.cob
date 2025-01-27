@@ -261,6 +261,8 @@
            MOVE 'REGISTROS LIDOS ' TO WRK-MSGERRO.
            MOVE WRK-QTREGISTROS TO WRK-MSGERRO(17:05).
            ACCEPT MOSTRA-ERRO.
+            CALL 'SYSTEM' USING BY CONTENT 
+           'start "" "C:\aulas\COBOLopen\relatorio_clientes.csv"'. 
        9000-RELATORIOTELA.
              MOVE 'MODULO - RELATORIO ' TO WRK-MODULO.
              DISPLAY TELA.           
@@ -338,7 +340,9 @@
        
        MOVE 'REGISTROS LIDOS ' TO WRK-MSGERRO.
        MOVE WRK-QTREGISTROS TO WRK-MSGERRO(17:05).
-       ACCEPT MOSTRA-ERRO.       
+       ACCEPT MOSTRA-ERRO.  
+       CALL 'SYSTEM' USING BY CONTENT 
+           'start "" "C:\aulas\COBOLopen\RELATO.TXT"'.     
 
 
        
